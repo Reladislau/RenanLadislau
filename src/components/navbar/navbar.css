@@ -1,0 +1,31 @@
+.navbar_container{
+    background-color: #1F042B;
+    border: 1px solid #FFF;
+    height: 10vh;
+    width: 75vw;
+    margin: auto;
+    margin-top: 10vh;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar_container ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    /* margin: auto; */
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    color: #FFF;
+    font-size: 1.2rem;
+    margin: auto;
+    font-family: "Zen Dots", cursive;
+}
+
+.navbar_container ul li{
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: auto;
+}
