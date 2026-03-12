@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import Styles from './CSS/WelcomeText.module.css'
+import DownArrow from '../../assets/DownArrow.png'
 
 const headingText = 'SEJA BEM VINDO (A)'
 const paragraphText = 'ao meu portifólio'
@@ -46,6 +47,7 @@ function WelcomeText() {
 
   const isHeadingTyping = typedHeading.length < headingText.length
   const isParagraphActive = typedHeading.length === headingText.length
+  const isTypingComplete = typedParagraph.length === paragraphText.length
 
   return (
     <div className={Styles.welcome_text_container}>
@@ -57,6 +59,18 @@ function WelcomeText() {
         {typedParagraph}
         {isParagraphActive && <span className={Styles.cursor} aria-hidden="true">|</span>}
       </p>
+
+      {/* Arrow container reserves space to prevent text from jumping */}
+      <div 
+        className={Styles.down_arrow_container} 
+        style={{
+          opacity: isTypingComplete ? 1 : 0,
+          pointerEvents: isTypingComplete ? 'auto' : 'none',
+          transition: 'opacity 0.5s ease-in'
+        }}
+      >
+        <img src={DownArrow} alt="Seta para baixo" />
+      </div>
     </div>
   )
 }
