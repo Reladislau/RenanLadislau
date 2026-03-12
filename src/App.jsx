@@ -1,4 +1,4 @@
-import Navbar from './components/navbar/navbar'
+import Navbar from './components/navbar/Navbar'
 import './App.css'
 import WelcomeText from './components/home_section/WelcomeText'
 
