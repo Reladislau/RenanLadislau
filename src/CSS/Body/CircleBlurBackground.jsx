@@ -4,7 +4,7 @@ export default function CircleBlurBackground() {
       style={{
         position: 'absolute',
         top: '50%',
-        left: '',
+        left: '0px',
         width: '500px',
         height: '500px',
         borderRadius: '50%',
@@ -20,7 +20,7 @@ export default function CircleBlurBackground() {
         filter: 'blur(120px)',
         transform: 'translate(-50%, -50%)',
         pointerEvents: 'none',
-        zIndex: -1,
+        zIndex: 0,
       }}
     />
   );

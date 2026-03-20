@@ -20,7 +20,7 @@ export default function CircleBlurBackgroundRight() {
         filter: 'blur(120px)',
         transform: 'translate(+50%, -50%)',
         pointerEvents: 'none',
-        zIndex: -1,
+        zIndex: 0,
       }}
     />
   );

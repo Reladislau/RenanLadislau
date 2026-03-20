@@ -13,7 +13,7 @@ function AbouteMe() {
 
         <div className={Styles.about_me_text_container}>
         <p className={Styles.about_me_paragraph}>
-          Olá! Meu nome é Renan, tenho 22 anos e sou um desenvolvedor front-end apaixonado por criar experiências digitais envolventes. Com uma sólida formação em desenvolvimento web, estou sempre em busca de aprimorar minhas habilidades e explorar novas tecnologias para entregar soluções inovadoras. Sou dedicado, criativo e comprometido em transformar ideias em realidade através do código.
+          Sou estudante de Análise e Desenvolvimento de Sistemas e atuo como desenvolvedor, com foco na construção de soluções que geram impacto real no negócio. Tenho experiência com Java, Python, APIs REST, automações e desenvolvimento full stack, além de trabalhar com integração de sistemas e análise de dados. Participei da criação de projetos que otimizaram processos e reduziram tempo operacional. Busco evoluir como Analista de Sistemas, criando soluções escaláveis, eficientes e alinhadas às necessidades do negócio em ambientes ágeis.
         </p>
         <div className={Styles.about_me_buttons}>
             <button className={Styles.about_me_button_contact}>Contato</button>
