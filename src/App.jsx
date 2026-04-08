@@ -2,6 +2,7 @@ import Navbar from './components/navbar/Navbar'
 import './App.css'
 import WelcomeText from './components/home_section/WelcomeText'
 import AbouteMe from './components/AboutMe/AbouteMe'
+import Formation from './components/Formation/Formation'
 
 function App() {
  
@@ -11,6 +12,7 @@ function App() {
     <Navbar/>
     <WelcomeText/>
     <AbouteMe/>
+    <Formation/>
     </>
   )
 }

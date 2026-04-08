@@ -13,7 +13,7 @@ function AbouteMe() {
 
         <div className={Styles.about_me_text_container}>
         <p className={Styles.about_me_paragraph}>
-          Sou estudante de Análise e Desenvolvimento de Sistemas e atuo como desenvolvedor, com foco na construção de soluções que geram impacto real no negócio. Tenho experiência com Java, Python, APIs REST, automações e desenvolvimento full stack, além de trabalhar com integração de sistemas e análise de dados. Participei da criação de projetos que otimizaram processos e reduziram tempo operacional. Busco evoluir como Analista de Sistemas, criando soluções escaláveis, eficientes e alinhadas às necessidades do negócio em ambientes ágeis.
+          Sou estudante de Análise e Desenvolvimento de Sistemas e atuo no desenvolvimento de soluções orientadas a impacto e eficiência operacional. Tenho experiência com Java, Python, APIs REST e automação de processos, além de integração de sistemas e manipulação de dados para tomada de decisão. Já participei de projetos voltados à otimização de fluxos e redução de esforço manual, com foco em ganho de performance e escalabilidade. Busco evoluir como Analista de Sistemas, contribuindo com soluções robustas, bem estruturadas e alinhadas aos objetivos do negócio em ambientes dinâmicos.
         </p>
         <div className={Styles.about_me_buttons}>
             <button className={Styles.about_me_button_contact}>Contato</button>

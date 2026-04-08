@@ -3,10 +3,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: auto;
     width: 90vw;
     margin: auto;
     margin-top: 90px;
+    padding-bottom: 90px;
 }
 
 .about_me_container h3{

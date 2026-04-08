@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
-  height: 250vh;
+  height: auto;
+  padding-bottom: 90px;
   background:
     radial-gradient(
       ellipse 40vw 98vh at -10% 42vh,
