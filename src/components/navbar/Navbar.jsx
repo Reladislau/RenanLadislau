@@ -7,6 +7,7 @@ function Navbar() {
             <li>INICIO</li>
             <li>SOBRE</li>
             <li>FORMAÇÃO</li>
+            <li>EXPERIÊNCIA</li>
             <li>HABILIDADES</li>
             <li>PROJETOS</li>
         </ul>

@@ -1,0 +1,152 @@
+.experience_container{
+    margin-top: 8vh;
+    width: 100%;
+    height: auto;
+    padding: 15px 0px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.experience_header{
+    color: #FFF;
+    font-size: 2rem;
+    font-family: "Zen Dots", cursive;
+    height: auto;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.experience_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    padding: 15px 0px;
+    /* background-color: red; */
+    margin-top: 35px;
+}
+
+.experience_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48%;
+    height: auto;
+    padding: 15px 0px;
+    border: #FFF solid 1px;
+    border-radius: 15px;
+    background-color: #13041a;
+}
+
+.first_container{
+    display: flex;
+    width: 95%;
+    height: auto;
+    padding: 5px 6px;
+    justify-content: flex-end;
+    /* background-color: blue; */
+}
+
+.dateContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45em;
+    width: 25%;
+    height: 4vh;
+    padding:5px 10px;
+    border-radius: 15px;
+    border: #FFF solid 1px;
+    font-family: Roboto;
+    font-size: 1rem;
+    color: #FFF;
+    margin-left: 95px;
+}
+
+.dateContainer p{
+    margin: 0;
+}
+
+.calendarIcon{
+    width: 1.5em;
+    height: 1.5em;
+    color: #FFF;
+    flex-shrink: 0;
+}
+
+
+.experience_title{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    height: auto;
+    padding: 5px 10px;
+    color: #FFF;
+    
+}
+
+.experience_title h4{
+    margin: 0;
+    font-family: Zen Dots, cursive;
+    font-size: 1.5rem;
+    margin-left: 15px;
+}
+
+.experience_title p{
+    margin: 0;
+    font-family: Roboto;
+    font-size: 1.25rem;
+    margin-left: 15px;
+}
+
+.experience_description{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    height: auto;
+    padding: 5px 10px;
+    color: #FFF;
+}
+
+.experience_description p{
+    margin: 0;
+    font-family: Roboto;
+    font-size: 1rem;
+    margin-left: 15px;
+    text-align: justify;
+    width: 89%;
+}
+
+.experience_habilities{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+    width: 95%;
+    height: auto;
+}
+
+.habilities_item{
+    display: flex;
+    height: 35px;
+    width: 15%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: #FFF solid 1px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1rem;
+    background-color: #1F042B;
+}
+

@@ -16,7 +16,6 @@
     font-weight: lighter;
     text-decoration: underline;
     text-underline-offset: 1rem;
-    letter-spacing: 0.18em;
 }
 
 .formation_subheading {
@@ -109,8 +108,8 @@
 }
 
 .formation_item_image1_special {
-    width: 90%;
-    height: 200px;
+    width: 94%;
+    height: 215px;
     margin: 0.15rem 0.175rem 0;
     border: 1px solid rgba(255, 255, 255, 0.34);
     border-radius: 18px;
