@@ -7,6 +7,8 @@ import CortaAi from "../../assets/CortaAi.png"
 import Secretword from "../../assets/SecretWord.png"
 import PhotoFocus from "../../assets/PhotoFocus.png"
 import LeanSixSigma from "../../assets/LeanSixSigma.jpg"
+import RBank from "../../assets/RBank.png"
+import EmProducao from "../../assets/EmProducao.png"
 
 const projectsData = [
   {
@@ -23,11 +25,11 @@ const projectsData = [
     id: 2,
     title: "Corta Aí",
     tags: ["HTML", "CSS", "JavaScript", "React", "SQL", "Java", "Spring Boot", "Bootstrap", "AWS"],
-    description: "O Corta Aí é um projeto desenvolvido com foco em otimizar a gestão de barbearias, centralizando agendamentos, atendimentos e controle operacional em uma única plataforma. A proposta é reduzir falhas comuns de processos manuais, trazendo mais organização, previsibilidade e eficiência para o dia a dia do negócio. A solução foi pensada para melhorar a experiência tanto dos clientes quanto dos profissionais, facilitando o acesso aos serviços.",
+    description: "O Corta Aí é um projeto em desenvolvimento com foco em otimizar a gestão de barbearias, centralizando agendamentos, atendimentos e controle operacional em uma única plataforma. A proposta é reduzir falhas comuns de processos manuais, trazendo mais organização, previsibilidade e eficiência para o dia a dia do negócio. A solução foi pensada para melhorar a experiência tanto dos clientes quanto dos profissionais, facilitando o acesso aos serviços.",
     repositoryUrl: "https://github.com/AppCortaAi/Arquitetura_completa",
     siteUrl: "https://web.cortaai.shop/",
     image: CortaAi,
-    imageAlt: "Imagem do Projeto 2",
+    imageAlt: "Imagem do Projeto Corta Aí",
   },
   {
     id: 3,
@@ -37,7 +39,7 @@ const projectsData = [
     repositoryUrl: "https://github.com/Morinian/PhotoFocus.git",
     siteUrl: "https://photo-focus.vercel.app/",
     image: PhotoFocus,
-    imageAlt: "Imagem do Projeto 3",
+    imageAlt: "Imagem do Projeto PhotoFocus",
   },
   {
     id: 4,
@@ -53,20 +55,20 @@ const projectsData = [
     id: 5,
     title: "RBank",
     tags: ["HTML", "CSS", "JavaScript", "React"],
-    description: "Descricao do projeto 5. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    repositoryUrl: "#",
-    siteUrl: "#",
-    image: "#",
-    imageAlt: "Imagem do Projeto 5",
+    description: "O RBank é um projeto desenvolvido com foco na criação de uma experiência digital para uma fintech, simulando um banco digital orientado à gestão financeira de forma prática e intuitiva. A proposta foi estruturar uma interface moderna que represente funcionalidades essenciais do contexto bancário, proporcionando clareza na navegação e organização das informações. A solução foi pensada para oferecer uma experiência fluida e consistente, aproximando o usuário de um ambiente financeiro acessível e bem estruturado.",
+    repositoryUrl: "https://github.com/Reladislau/RBank",
+    siteUrl: "https://r-bank.vercel.app/",
+    image: RBank,
+    imageAlt: "Imagem do Projeto Rbank",
   },
   {
     id: 6,
-    title: "Projeto 6",
-    tags: ["UX", "UI", "CSS"],
-    description: "Descricao do projeto 6. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Projeto Em Produção",
+    tags: ["Projeto em desenvolvimento"],
+    description: "Este projeto está atualmente em desenvolvimento e em breve estará disponível para visualização. Fique atento para novidades!",
     repositoryUrl: "#",
     siteUrl: "#",
-    image: LeanSixSigma,
+    image: EmProducao,
     imageAlt: "Imagem do Projeto 6",
   },
 ]
