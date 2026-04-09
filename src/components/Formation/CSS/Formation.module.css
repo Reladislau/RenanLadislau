@@ -240,14 +240,37 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    .formation_container {
+        margin-top: 70px;
+        padding: 1px 0 70px;
+    }
+
     .formation_heading {
-        font-size: 1.95rem;
+        font-size: 2.2rem;
+        margin: 15vh 0 0;
+    }
+
+    .formation_item {
+        width: min(330px, calc(100vw - 3rem));
+        min-height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .formation_container {
+        margin-top: 60px;
+        padding: 1px 0 60px;
+    }
+
+    .formation_heading {
+        font-size: 1.75rem;
         letter-spacing: 0.12em;
+        margin: 10vh 0 0;
     }
 
     .formation_subheading {
-        font-size: 0.98rem;
+        font-size: 1rem;
     }
 
     .formation_carousel_stage {
@@ -255,17 +278,97 @@
     }
 
     .formation_item {
-        width: min(310px, calc(100vw - 2.2rem));
+        width: min(300px, calc(100vw - 3rem));
         min-height: 480px;
     }
 
     .formation_container h4 {
-        font-size: 1.05rem;
+        font-size: 1.15rem;
     }
 
     .formation_item_meta {
         grid-template-columns: 1fr;
         gap: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .formation_container {
+        margin-top: 50px;
+        padding: 1px 0 50px;
+    }
+
+    .formation_heading {
+        font-size: 1.4rem;
+        margin: 5vh 0 0;
+    }
+
+    .formation_subheading {
+        font-size: 0.9rem;
+    }
+
+    .formation_content {
+        margin-top: 4vh;
+    }
+
+    .formation_item {
+        width: min(280px, calc(100vw - 2rem));
+        min-height: 450px;
+        padding: 0.8rem 0.8rem 0rem;
+    }
+
+    .formation_item_image1 {
+        height: 160px;
+        width: 85%;
+    }
+
+    .formation_container h4 {
+        font-size: 1rem;
+    }
+
+    .formation_item_institution {
+        font-size: 0.8rem;
+    }
+
+    .formation_item_badge {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.8rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .formation_container {
+        margin-top: 40px;
+        padding: 1px 0 40px;
+    }
+
+    .formation_heading {
+        font-size: 1.25rem;
+    }
+
+    .formation_subheading {
+        font-size: 0.85rem;
+    }
+
+    .formation_item {
+        width: min(260px, calc(100vw - 1.5rem));
+        min-height: 420px;
+        padding: 0.7rem 0.7rem 0rem;
+    }
+
+    .formation_item_image1 {
+        height: 140px;
+        width: 80%;
+        padding: 0.8rem;
+    }
+
+    .formation_container h4 {
+        font-size: 0.95rem;
+    }
+
+    .formation_item_content_location,
+    .formation_item_content_date {
+        padding: 0.5rem 0.6rem;
     }
 }
 

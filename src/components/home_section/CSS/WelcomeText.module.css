@@ -60,3 +60,111 @@
         transform: translateY(-20px);
     }
 }
+
+/* ===== BREAKPOINT: 1024px (Tablet/Mobile) ===== */
+@media (max-width: 1024px) {
+    .welcome_text_container {
+        width: 90vw;
+        height: 70vh;
+        margin-top: 8vh;
+    }
+
+    .welcome_text_container h1 {
+        font-size: 3rem;
+    }
+
+    .welcome_text_container p {
+        font-size: 1.6rem;
+        width: 80%;
+    }
+
+    .down_arrow_container {
+        margin-top: 6rem;
+    }
+
+    .down_arrow_container img {
+        width: 3.8rem;
+        height: 3.8rem;
+    }
+}
+
+/* ===== BREAKPOINT: 768px (Tablet) ===== */
+@media (max-width: 768px) {
+    .welcome_text_container {
+        width: 92vw;
+        height: 65vh;
+        margin-top: 6vh;
+    }
+
+    .welcome_text_container h1 {
+        font-size: 2.5rem;
+    }
+
+    .welcome_text_container p {
+        font-size: 1.4rem;
+        width: 90%;
+    }
+
+    .down_arrow_container {
+        margin-top: 4rem;
+    }
+
+    .down_arrow_container img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+
+/* ===== BREAKPOINT: 576px (Mobile) ===== */
+@media (max-width: 576px) {
+    .welcome_text_container {
+        width: 95vw;
+        height: 60vh;
+        margin-top: 4vh;
+    }
+
+    .welcome_text_container h1 {
+        font-size: 2rem;
+    }
+
+    .welcome_text_container p {
+        font-size: 1.2rem;
+        width: 95%;
+    }
+
+    .down_arrow_container {
+        margin-top: 3rem;
+    }
+
+    .down_arrow_container img {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+/* ===== BREAKPOINT: 360px (Mobile Small) ===== */
+@media (max-width: 360px) {
+    .welcome_text_container {
+        width: 95vw;
+        height: 50vh;
+        margin-top: 3vh;
+    }
+
+    .welcome_text_container h1 {
+        font-size: 1.7rem;
+    }
+
+    .welcome_text_container p {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .down_arrow_container {
+        margin-top: 2rem;
+    }
+
+    .down_arrow_container img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}

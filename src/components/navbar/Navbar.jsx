@@ -13,6 +13,8 @@ const navItems = [
 
 function Navbar() {
   const [activeSection, setActiveSection] = useState("inicio")
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024)
 
   useEffect(() => {
     const getCurrentSectionId = () => {
@@ -45,13 +47,21 @@ function Navbar() {
       setActiveSection(getCurrentSectionId())
     }
 
+    const handleResize = () => {
+      const isNowMobile = window.innerWidth < 1024
+      setIsMobile(isNowMobile)
+      if (!isNowMobile) {
+        setIsMenuOpen(false)
+      }
+    }
+
     handleScroll()
     window.addEventListener("scroll", handleScroll, { passive: true })
-    window.addEventListener("resize", handleScroll)
+    window.addEventListener("resize", handleResize)
 
     return () => {
       window.removeEventListener("scroll", handleScroll)
-      window.removeEventListener("resize", handleScroll)
+      window.removeEventListener("resize", handleResize)
     }
   }, [])
 
@@ -70,15 +80,30 @@ function Navbar() {
   }
 
   return (
-    <div className={`navbar_container ${activeSection !== "inicio" ? "navbar_container_scrolled" : ""}`}>
-      <ul>
+    <div className={`navbar_container ${activeSection !== "inicio" ? "navbar_container_scrolled" : ""} ${isMenuOpen ? "navbar_menu_open" : ""}`}>
+      {isMobile && (
+        <button
+          className="navbar_hamburger"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle menu"
+          aria-expanded={isMenuOpen}
+        >
+          <span className="hamburger_line"></span>
+          <span className="hamburger_line"></span>
+          <span className="hamburger_line"></span>
+        </button>
+      )}
+      <ul className={`navbar_list ${isMenuOpen ? "navbar_list_open" : ""}`}>
         {navItems.map(({ label, id }) => (
           <li key={id}>
             <a
               href={`#${id}`}
               className={`navbar_link ${activeSection === id ? "navbar_link_active" : ""}`}
               aria-current={activeSection === id ? "page" : undefined}
-              onClick={(event) => handleClick(event, id)}
+              onClick={(event) => {
+                handleClick(event, id)
+                setIsMenuOpen(false)
+              }}
             >
               {label}
             </a>
