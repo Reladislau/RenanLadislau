@@ -18,7 +18,7 @@ const carouselCards = [
     id: 2,
     image: formation2,
     alt: 'SENAC',
-    title: 'Programação Web Java Full Stack',
+    title: 'Programação Web Java',
     institution: 'SENAC',
     location: 'São Paulo - SP',
     period: 'Agosto/2023 - Dezembro/2023',

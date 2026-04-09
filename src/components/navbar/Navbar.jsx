@@ -10,6 +10,7 @@ function Navbar() {
             <li>EXPERIÊNCIA</li>
             <li>HABILIDADES</li>
             <li>PROJETOS</li>
+            <li>CONTATO</li>
         </ul>
     </div>
   )

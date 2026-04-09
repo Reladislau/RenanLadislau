@@ -4,6 +4,8 @@ import WelcomeText from './components/home_section/WelcomeText'
 import AbouteMe from './components/AboutMe/AbouteMe'
 import Formation from './components/Formation/Formation'
 import Experience from './components/Experience/Experience'
+import Habilities from './components/Habilities/Habilities'
+import Projects from './components/Projects/Projects'
 
 function App() {
  
@@ -15,6 +17,8 @@ function App() {
     <AbouteMe/>
     <Formation/>
     <Experience/>
+    <Habilities/>
+    <Projects/>
     </>
   )
 }
