@@ -36,72 +36,87 @@ const otherSkills = [
     { label: "Scrum", Icon: SiScrumalliance, color: "#009FDA" },
 ]
 
+const skillSections = [
+    {
+        title: "Front-End",
+        subtitle: "Interfaces modernas e acessiveis",
+        iconType: "image",
+        image: FrontEndIcon,
+        imageAlt: "Front-end",
+        skills: frontEndSkills,
+    },
+    {
+        title: "Back-end",
+        subtitle: "APIs, arquitetura e automacoes",
+        iconType: "icon",
+        Icon: FaGear,
+        skills: backEndSkills,
+    },
+    {
+        title: "Banco de Dados",
+        subtitle: "Modelagem, consultas e performance",
+        iconType: "icon",
+        Icon: FaDatabase,
+        skills: databaseSkills,
+    },
+    {
+        title: "Outras habilidades",
+        subtitle: "Ferramentas e boas praticas de entrega",
+        iconType: "icon",
+        Icon: FaCubes,
+        skills: otherSkills,
+    },
+]
+
 function Habilities() {
     return (
-        <div className={Style.habilities_container}>
+        <section className={Style.habilities_container}>
             <div className={Style.habilities_header}>
+                
                 <h3>HABILIDADES</h3>
-            </div>
-            <div className={Style.habilities_content}>
-                <div className={Style.hability_header}>
-                    <img className={Style.hability_icon} src={FrontEndIcon} alt="Front-end" />
-                    <h2>Front-End</h2>
-                </div>
-                <div className={Style.hability_description}>
-                    {frontEndSkills.map(({ label, Icon, color }) => (
-                        <div className={Style.hability_content} key={label}>
-                            <Icon className={Style.hability_card_icon} style={{ color }} aria-hidden="true" />
-                            <p>{label}</p>
-                        </div>
-                    ))}
-                </div>
+                <p>
+                    Tecnologias que uso para construir experiencias completas, do front-end ao deploy.
+                </p>
             </div>
 
-            <div className={Style.habilities_content}>
-                <div className={Style.hability_header}>
-                    <FaGear className={Style.hability_title_icon} aria-hidden="true" />
-                    <h2>Back-end</h2>
-                </div>
-                <div className={Style.hability_description}>
-                    {backEndSkills.map(({ label, Icon, color }) => (
-                        <div className={Style.hability_content} key={label}>
-                            <Icon className={Style.hability_card_icon} style={{ color }} aria-hidden="true" />
-                            <p>{label}</p>
-                        </div>
-                    ))}
-                </div>
-            </div>
+            <div className={Style.habilities_grid}>
+                {skillSections.map(({ title, subtitle, iconType, image, imageAlt, Icon, skills }) => (
+                    <article className={Style.habilities_content} key={title}>
+                        <div className={Style.hability_header}>
+                            <div className={Style.hability_icon_wrap}>
+                                {iconType === "image" ? (
+                                    <img className={Style.hability_icon} src={image} alt={imageAlt} />
+                                ) : (
+                                    <Icon className={Style.hability_title_icon} aria-hidden="true" />
+                                )}
+                            </div>
 
-            <div className={Style.habilities_content}>
-                <div className={Style.hability_header}>
-                    <FaDatabase className={Style.hability_title_icon} aria-hidden="true" />
-                    <h2>Banco de Dados</h2>
-                </div>
-                <div className={Style.hability_description}>
-                    {databaseSkills.map(({ label, Icon, color }) => (
-                        <div className={Style.hability_content} key={label}>
-                            <Icon className={Style.hability_card_icon} style={{ color }} aria-hidden="true" />
-                            <p className={label === "SQL Server" ? Style.sql_server_text : undefined}>{label}</p>
-                        </div>
-                    ))}
-                </div>
-            </div>
+                            <div className={Style.hability_heading_text}>
+                                <h2>{title}</h2>
+                                <p>{subtitle}</p>
+                            </div>
 
-            <div className={Style.habilities_content}>
-                <div className={Style.hability_header}>
-                    <FaCubes className={Style.hability_title_icon} aria-hidden="true" />
-                    <h2>Outras habilidades</h2>
-                </div>
-                <div className={Style.hability_description}>
-                    {otherSkills.map(({ label, Icon, color }) => (
-                        <div className={Style.hability_content} key={label}>
-                            <Icon className={Style.hability_card_icon} style={{ color }} aria-hidden="true" />
-                            <p>{label}</p>
+                            <span className={Style.hability_count}>{skills.length}</span>
                         </div>
-                    ))}
-                </div>
+
+                        <div className={Style.hability_description}>
+                            {skills.map(({ label, Icon: SkillIcon, color }) => (
+                                <div
+                                    className={Style.hability_content}
+                                    key={label}
+                                    style={{
+                                        "--skill-glow": color,
+                                    }}
+                                >
+                                    <SkillIcon className={Style.hability_card_icon} style={{ color }} aria-hidden="true" />
+                                    <p className={label === "SQL Server" ? Style.sql_server_text : undefined}>{label}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </article>
+                ))}
             </div>
-        </div>
+        </section>
     )
 }
 
