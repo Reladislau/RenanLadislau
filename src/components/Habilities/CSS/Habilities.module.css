@@ -261,48 +261,66 @@
 @media (max-width: 768px) {
     .habilities_container {
         margin-top: 60px;
-        padding: 25px 0 0;
+        padding: 0 16px 40px;
     }
 
     .habilities_header {
-        width: min(600px, 90vw);
+        width: 100%;
     }
 
     .habilities_header h3 {
-        font-size: 1.75rem;
+        font-size: 2rem;
+        margin-bottom: 1rem;
     }
 
     .habilities_header p {
-        font-size: 0.95rem;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .header_tag {
+        margin-bottom: 1rem;
     }
 
     .habilities_grid {
         grid-template-columns: 1fr;
-        gap: 1.2rem;
-        width: min(600px, 90vw);
-        margin-top: 1.5rem;
+        gap: 16px;
+        width: 100%;
+        margin-top: 24px;
     }
 
     .habilities_content {
-        padding: 1.1rem 1rem 1.2rem;
+        padding: 18px 16px 20px;
+        gap: 12px;
     }
 
     .hability_header {
-        column-gap: 0.7rem;
+        column-gap: 12px;
     }
 
     .hability_icon_wrap {
-        width: 2.2rem;
-        height: 2.2rem;
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
     }
 
     .hability_heading_text h2 {
-        font-size: 1.15rem;
+        font-size: 1.1rem;
+    }
+
+    .hability_heading_text p {
+        font-size: 0.8rem;
     }
 
     .hability_description {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 0.7rem;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .hability_content {
+        min-height: auto;
+        padding: 10px;
+        font-size: 0.85rem;
     }
 }
 

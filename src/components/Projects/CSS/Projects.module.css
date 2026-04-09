@@ -172,57 +172,75 @@
 /* ===== BREAKPOINT: 768px (Tablet - Centralize Starts) ===== */
 @media (max-width: 768px) {
     .projects_container {
-        margin-top: 120px;
-        padding: 0 20px;
+        margin-top: 60px;
+        width: 100%;
+        padding: 0 12px;
+        box-sizing: border-box;
     }
 
     .projects_header {
-        font-size: 1.75rem;
+        font-size: 2rem;
+        margin-bottom: 2rem;
     }
 
     .projects_content {
         flex-direction: column;
-        align-items: center;
-        gap: 25px;
+        align-items: stretch;
+        gap: 28px;
+        width: 100%;
         padding: 0;
-        margin-top: 25px;
+        margin-top: 0;
     }
 
     .project_card {
-        width: min(600px, 90vw);
+        width: 100%;
         min-height: auto;
         max-height: none;
     }
 
     .project_image {
         height: auto;
-        min-height: 40vh;
+        min-height: 220px;
+        max-height: 260px;
+    }
+
+    .project_info {
+        padding: 20px 18px 24px;
     }
 
     .project_info h4 {
         font-size: 1.4rem;
+        margin-bottom: 12px;
+    }
+
+    .project_tags {
+        gap: 8px;
+        margin-bottom: 12px;
     }
 
     .project_tags span {
-        font-size: 0.9rem;
-        padding: 4px 8px;
+        font-size: 0.85rem;
+        padding: 6px 12px;
     }
 
     .project_info p {
         font-size: 0.95rem;
+        line-height: 1.5;
+        margin-top: 12px;
     }
 
     .project_links {
-        gap: 30px;
+        gap: 24px;
+        margin-top: 16px;
     }
 
     .project_links a {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
     .link_icon {
-        width: 25px;
-        height: 25px;
+        width: 24px;
+        height: 24px;
     }
 }
 

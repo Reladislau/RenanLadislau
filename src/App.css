@@ -4,6 +4,16 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 12vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 section {
@@ -11,6 +21,8 @@ section {
 }
 
 body{
+  margin: 0;
+  padding: 0;
   height: auto;
   padding-bottom: 90px;
   background:
@@ -31,6 +43,70 @@ body{
     linear-gradient(to bottom, #070715, #1f042b, #000000);
   width: 100%;
   overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+section {
+  width: 100%;
+  overflow-x: clip;
+}
+
+@media (max-width: 1024px) {
+  body {
+    padding-bottom: 72px;
+    background:
+      radial-gradient(
+        ellipse 52vw 90vh at -18% 40vh,
+        rgba(255, 255, 255, 0.85) 0%,
+        rgba(121, 2, 173, 0.5) 35%,
+        rgba(54, 2, 76, 0.32) 68%,
+        rgba(31, 4, 43, 0) 100%
+      ),
+      radial-gradient(
+        ellipse 52vw 90vh at 118% 40vh,
+        rgba(255, 255, 255, 0.85) 0%,
+        rgba(121, 2, 173, 0.5) 35%,
+        rgba(54, 2, 76, 0.32) 68%,
+        rgba(31, 4, 43, 0) 100%
+      ),
+      linear-gradient(to bottom, #070715, #1f042b, #000000);
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 92px;
+  }
+
+  section {
+    scroll-margin-top: 92px;
+  }
+
+  body {
+    padding-bottom: 48px;
+    background:
+      radial-gradient(
+        ellipse 70vw 62vh at -28% 28vh,
+        rgba(255, 255, 255, 0.65) 0%,
+        rgba(121, 2, 173, 0.38) 34%,
+        rgba(54, 2, 76, 0.22) 66%,
+        rgba(31, 4, 43, 0) 100%
+      ),
+      radial-gradient(
+        ellipse 70vw 62vh at 128% 28vh,
+        rgba(255, 255, 255, 0.65) 0%,
+        rgba(121, 2, 173, 0.38) 34%,
+        rgba(54, 2, 76, 0.22) 66%,
+        rgba(31, 4, 43, 0) 100%
+      ),
+      linear-gradient(to bottom, #070715, #1f042b, #000000);
+  }
 }
 
 

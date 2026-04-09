@@ -14,7 +14,7 @@ const navItems = [
 function Navbar() {
   const [activeSection, setActiveSection] = useState("inicio")
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024)
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768)
 
   useEffect(() => {
     const getCurrentSectionId = () => {
@@ -48,7 +48,7 @@ function Navbar() {
     }
 
     const handleResize = () => {
-      const isNowMobile = window.innerWidth < 1024
+      const isNowMobile = window.innerWidth <= 768
       setIsMobile(isNowMobile)
       if (!isNowMobile) {
         setIsMenuOpen(false)

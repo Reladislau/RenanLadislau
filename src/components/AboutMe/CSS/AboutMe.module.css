@@ -142,52 +142,61 @@
 /* ===== BREAKPOINT: 768px (Tablet - Centralize Starts) ===== */
 @media (max-width: 768px) {
     .about_me_container {
-        width: 95vw;
+        width: 100%;
+        max-width: none;
         margin-top: 60px;
-        padding-bottom: 60px;
+        padding: 0 20px 60px;
     }
 
     .about_me_container h3 {
-        font-size: 1.75rem;
+        font-size: 1.9rem;
+        margin-bottom: 1rem;
     }
 
     .about_me_container p {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
+        line-height: 1.6;
     }
 
     .about_me_content {
         flex-direction: column;
-        gap: 30px;
-        margin-top: 4vh;
+        gap: 32px;
+        margin-top: 24px;
+        width: 100%;
+        max-width: 760px;
     }
 
     .about_me_image_container {
         width: 100%;
+        max-width: 460px;
+        display: flex;
+        justify-content: center;
     }
 
     .about_me_image_container img {
-        width: 80%;
+        width: 100%;
+        max-width: 420px;
         height: auto;
-        max-height: 50vh;
     }
 
     .about_me_text_container {
         width: 100%;
+        max-width: 760px;
         min-height: auto;
-        gap: 1rem;
+        gap: 16px;
     }
 
     .about_me_buttons {
-        flex-direction: row;
-        gap: 1.5rem;
+        flex-direction: column;
+        gap: 16px;
         width: 100%;
     }
 
     .about_me_button_contact,
     .about_me_button_cv {
-        width: 45%;
-        height: 3.5rem;
-        font-size: 1.2rem;
+        width: 100%;
+        height: 48px;
+        font-size: 1rem;
     }
 }
 

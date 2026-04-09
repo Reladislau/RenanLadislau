@@ -218,33 +218,6 @@
     line-height: 1.3;
 }
 
-@media (max-width: 980px) {
-    .contact_container {
-        margin-top: 90px;
-    }
-
-    .contact_content {
-        grid-template-columns: minmax(0, 1fr);
-    }
-}
-
-@media (max-width: 640px) {
-    .contact_container {
-        width: min(1120px, 94vw);
-        gap: 1.6rem;
-    }
-
-    .contact_form_card,
-    .contact_info_card {
-        padding: 1.1rem 0.95rem;
-    }
-
-    .contact_actions a {
-        min-height: 2.9rem;
-        font-size: 0.9rem;
-    }
-}
-
 /* ===== BREAKPOINT: 1024px (Desktop - Adjustments only) ===== */
 @media (max-width: 1024px) {
     .contact_container {
@@ -263,56 +236,106 @@
 
 /* ===== BREAKPOINT: 768px (Tablet - Centralize Starts) ===== */
 @media (max-width: 768px) {
+    html{
+        width: 100%;
+    }
+    body{
+        width: 100%;
+    }
     .contact_container {
-        width: min(650px, 90vw);
-        margin: 80px auto 0;
-        gap: 1.5rem;
+        width: 100%;
+        max-width: none;
+        margin: 60px auto 0;
+        gap: 2rem;
+        padding: 0 16px;
+        box-sizing: border-box;
     }
 
     .contact_header h3 {
-        font-size: 1.6rem;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
     }
 
     .contact_header p {
-        font-size: 0.95rem;
+        font-size: 1rem;
+        line-height: 1.5;
     }
 
     .contact_content {
         grid-template-columns: 1fr;
-        gap: 0.8rem;
-        padding-bottom: 50px;
+        gap: 2rem;
+        padding: 0 0 10px;
     }
 
     .contact_info_card,
     .contact_form_card {
-        padding: 1.1rem 0.9rem;
-        padding-bottom: 30px;
+        padding: 24px 20px;
+        border-radius: 14px;
+    }
+
+    .contact_info_card {
+        padding-bottom: 44px;
+        min-height: auto;
     }
 
     .contact_info_card h4 {
-        font-size: 0.95rem;
+        font-size: 1rem;
+        margin-bottom: 16px;
+    }
+
+    .info_block {
+        padding: 14px 14px;
+        gap: 12px;
+    }
+
+    .location_block {
+        min-height: auto;
     }
 
     .location_item {
         font-size: 1rem;
     }
 
+    .contact_actions {
+        gap: 12px;
+    }
+
     .contact_actions a {
-        font-size: 0.9rem;
-        min-height: 2.6rem;
+        font-size: 0.95rem;
+        min-height: 48px;
+        padding: 0 16px;
     }
 
     .contact_form_card label {
         font-size: 0.95rem;
+        margin-top: 12px;
+    }
+
+    .contact_form_card input,
+    .contact_form_card textarea {
+        padding: 12px 14px;
+        font-size: 1rem;
+    }
+
+    .contact_form_card textarea {
+        min-height: 140px;
+    }
+
+    .contact_form_card button {
+        min-height: 48px;
+        font-size: 1rem;
+        margin-top: 16px;
     }
 }
 
 /* ===== BREAKPOINT: 576px (Mobile) ===== */
 @media (max-width: 576px) {
     .contact_container {
-        width: 95vw;
-        margin: 60px auto 0;
+        width: 100%;
+        margin: 52px auto 0;
         gap: 1.3rem;
+        padding: 0 12px;
+        box-sizing: border-box;
     }
 
     .contact_header h3 {
@@ -325,7 +348,7 @@
 
     .contact_content {
         gap: 0.8rem;
-        padding-bottom: 40px;
+        padding: 0 0 8px;
     }
 
     .contact_info_card,
@@ -386,9 +409,11 @@
 /* ===== BREAKPOINT: 360px (Mobile Small) ===== */
 @media (max-width: 360px) {
     .contact_container {
-        width: 95vw;
-        margin: 45px auto 0;
+        width: 100%;
+        margin: 40px auto 0;
         gap: 1.1rem;
+        padding: 0 10px;
+        box-sizing: border-box;
     }
 
     .contact_header h3 {
@@ -401,7 +426,7 @@
 
     .contact_content {
         gap: 0.7rem;
-        padding-bottom: 30px;
+        padding: 0 0 6px;
     }
 
     .contact_info_card,

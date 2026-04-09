@@ -58,7 +58,7 @@
     justify-content: center;
     gap: 0.45em;
     width: 25%;
-    height: 4vh;
+    height: auto;
     padding:5px 10px;
     border-radius: 15px;
     border: #FFF solid 1px;
@@ -175,62 +175,79 @@
 @media (max-width: 768px) {
     .experience_container {
         margin-top: 60px;
-        padding: 0 20px;
+        padding: 0 16px;
     }
 
     .experience_header {
-        font-size: 1.75rem;
+        font-size: 2rem;
+        margin-bottom: 2rem;
     }
 
     .experience_content {
         flex-direction: column;
-        align-items: center;
-        gap: 40px;
+        align-items: stretch;
+        gap: 24px;
         padding: 0;
-        margin-top: 25px;
+        margin-top: 20px;
     }
 
     .experience_item {
-        width: min(600px, 90vw);
-        padding: 15px 0px;
+        width: 100%;
+        padding: 20px 18px 24px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 12px;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
     }
 
     .first_container {
-        justify-content: center;
+        justify-content: flex-start;
         width: 100%;
+        flex-wrap: wrap;
+        gap: 12px;
     }
 
     .dateContainer {
         width: auto;
-        margin-left: 0;
-        padding: 5px 12px;
-        font-size: 0.95rem;
+        margin: 0;
+        padding: 8px 14px;
+        font-size: 0.9rem;
     }
 
     .experience_title h4 {
         font-size: 1.35rem;
-        margin-left: 10px;
+        margin: 8px 0 0 0;
+        padding-left: 0;
     }
 
     .experience_title p {
-        font-size: 1.1rem;
-        margin-left: 10px;
+        font-size: 1rem;
+        margin: 4px 0 0 0;
+        padding-left: 0;
+    }
+
+    .experience_description {
+        margin-top: 12px;
     }
 
     .experience_description p {
         font-size: 0.95rem;
-        margin-left: 10px;
-        width: 95%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
     }
 
     .experience_habilities {
-        justify-content: center;
+        justify-content: flex-start;
         width: 100%;
+        flex-wrap: wrap;
+        margin-top: 16px;
+        gap: 8px;
     }
 
     .habilities_item {
         width: auto;
-        padding: 0 12px;
+        height: 36px;
+        padding: 0 14px;
         font-size: 0.9rem;
     }
 }

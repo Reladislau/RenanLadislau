@@ -91,27 +91,33 @@
 /* ===== BREAKPOINT: 768px (Tablet) ===== */
 @media (max-width: 768px) {
     .welcome_text_container {
-        width: 92vw;
-        height: 65vh;
-        margin-top: 6vh;
+        width: 95vw;
+        height: auto;
+        min-height: 60vh;
+        margin-top: 80px;
+        padding: 40px 20px;
     }
 
     .welcome_text_container h1 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
+        line-height: 1.2;
+        margin-bottom: 16px;
     }
 
     .welcome_text_container p {
-        font-size: 1.4rem;
-        width: 90%;
+        font-size: 1.3rem;
+        width: 100%;
+        line-height: 1.5;
+        margin-bottom: 32px;
     }
 
     .down_arrow_container {
-        margin-top: 4rem;
+        margin-top: 40px;
     }
 
     .down_arrow_container img {
-        width: 3.5rem;
-        height: 3.5rem;
+        width: 40px;
+        height: 40px;
     }
 }
 

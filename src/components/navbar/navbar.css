@@ -85,7 +85,7 @@
     }
 }
 
-/* ===== BREAKPOINT: 1024px - Still Desktop (Laptop Normal) ===== */
+/* ===== BREAKPOINT: 1024px - Laptop (Navbar Normal) ===== */
 @media (max-width: 1024px) {
     .navbar_container {
         width: 90vw;
@@ -97,7 +97,7 @@
     }
 }
 
-/* ===== BREAKPOINT: 768px - Tablet (Hamburger Menu Starts) ===== */
+/* ===== BREAKPOINT: 768px - Tablet/Mobile (Hamburger Menu Starts) ===== */
 @media (max-width: 768px) {
     .navbar_container {
         height: auto;
@@ -144,7 +144,7 @@
         transform: rotate(-45deg) translate(7px, -7px);
     }
 
-    .navbar_list {
+    .navbar_container .navbar_list {
         display: none;
         flex-direction: column;
         position: absolute;
@@ -163,7 +163,7 @@
         box-sizing: border-box;
     }
 
-    .navbar_list_open {
+    .navbar_container .navbar_list.navbar_list_open {
         display: flex;
     }
 
