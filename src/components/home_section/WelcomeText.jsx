@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import Styles from './CSS/WelcomeText.module.css'
 import DownArrow from '../../assets/DownArrow.png'
 
-const headingText = 'SEJA BEM VINDO (A)'
+const headingText = 'SEJA BEM-VINDO(A)'
 const paragraphText = 'ao meu portifólio'
 
 function WelcomeText() {

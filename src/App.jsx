@@ -6,6 +6,8 @@ import Formation from './components/Formation/Formation'
 import Experience from './components/Experience/Experience'
 import Habilities from './components/Habilities/Habilities'
 import Projects from './components/Projects/Projects'
+import Contact from './components/Contact/Contact'
+import Footer from './components/footer/Footer'
 
 function App() {
  
@@ -31,6 +33,10 @@ function App() {
     <section id="projetos">
       <Projects />
     </section>
+    <section id="contato">
+      <Contact />
+    </section>
+    <Footer />
     </>
   )
 }

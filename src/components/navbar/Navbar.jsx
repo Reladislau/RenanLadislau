@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import "../navbar/navbar.css"
 
 const navItems = [
-  { label: "INICIO", id: "inicio" },
+  { label: "INÍCIO", id: "inicio" },
   { label: "SOBRE", id: "sobre" },
   { label: "FORMAÇÃO", id: "formacao" },
   { label: "EXPERIÊNCIA", id: "experiencia" },

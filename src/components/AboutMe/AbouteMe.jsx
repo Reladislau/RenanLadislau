@@ -2,6 +2,14 @@ import Styles from './CSS/AboutMe.module.css'
 import MeImage from '../../assets/Me.png'
 
 function AbouteMe() {
+  const handleContactClick = () => {
+    const contactSection = document.getElementById("contato")
+
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth", block: "start" })
+    }
+  }
+
   return (
     <div className={Styles.about_me_container}>
       <h3 className={Styles.about_me_heading}>SOBRE MIM</h3>
@@ -16,8 +24,14 @@ function AbouteMe() {
           Sou estudante de Análise e Desenvolvimento de Sistemas e atuo no desenvolvimento de soluções orientadas a impacto e eficiência operacional. Tenho experiência com Java, Python, APIs REST e automação de processos, além de integração de sistemas e manipulação de dados para tomada de decisão. Já participei de projetos voltados à otimização de fluxos e redução de esforço manual, com foco em ganho de performance e escalabilidade. Busco evoluir como Analista de Sistemas, contribuindo com soluções robustas, bem estruturadas e alinhadas aos objetivos do negócio em ambientes dinâmicos.
         </p>
         <div className={Styles.about_me_buttons}>
-            <button className={Styles.about_me_button_contact}>Contato</button>
-            <button className={Styles.about_me_button_cv}>CV</button>
+            <button className={Styles.about_me_button_contact} type="button" onClick={handleContactClick}>Contato</button>
+            <a
+              className={Styles.about_me_button_cv}
+              href="/Curriculo-Renan-Ladislau.pdf"
+              download="Curriculo-Renan-Ladislau.pdf"
+            >
+              CV
+            </a>
         </div>
         </div>
       </div>

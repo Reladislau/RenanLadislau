@@ -39,7 +39,7 @@ const otherSkills = [
 const skillSections = [
     {
         title: "Front-End",
-        subtitle: "Interfaces modernas e acessiveis",
+        subtitle: "Interfaces modernas e acessíveis",
         iconType: "image",
         image: FrontEndIcon,
         imageAlt: "Front-end",
@@ -47,7 +47,7 @@ const skillSections = [
     },
     {
         title: "Back-end",
-        subtitle: "APIs, arquitetura e automacoes",
+        subtitle: "APIs, arquitetura e automações",
         iconType: "icon",
         Icon: FaGear,
         skills: backEndSkills,
@@ -61,7 +61,7 @@ const skillSections = [
     },
     {
         title: "Outras habilidades",
-        subtitle: "Ferramentas e boas praticas de entrega",
+        subtitle: "Ferramentas e boas práticas de entrega",
         iconType: "icon",
         Icon: FaCubes,
         skills: otherSkills,
@@ -75,7 +75,7 @@ function Habilities() {
                 
                 <h3>HABILIDADES</h3>
                 <p>
-                    Tecnologias que uso para construir experiencias completas, do front-end ao deploy.
+                    Tecnologias que uso para construir experiências completas, do front-end ao deploy.
                 </p>
             </div>
 

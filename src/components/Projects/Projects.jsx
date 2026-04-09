@@ -13,7 +13,7 @@ import EmProducao from "../../assets/EmProducao.png"
 const projectsData = [
   {
     id: 1,
-    title: "Vinculos",
+    title: "Vínculos",
     tags: ["HTML", "CSS",  "JavaScript", "SQL", "Java", "Spring Boot", "Bootstrap", "AWS"],
     description: "A Vínculos é uma startup concebida como Trabalho de Conclusão de Curso no PROPROFISSÃO, com o objetivo de transformar a inclusão profissional de pessoas com deficiência por meio de uma plataforma que conecta talentos a oportunidades de forma mais inteligente e eficiente. A solução foi pensada para reduzir barreiras no processo de contratação, aumentando a assertividade no encontro entre candidatos e empresas.",
     repositoryUrl: "https://github.com/Vincluss",
@@ -49,7 +49,7 @@ const projectsData = [
     repositoryUrl: "https://github.com/Reladislau/secret-word",
     siteUrl: "https://secret-word-six-xi.vercel.app/",
     image: Secretword,
-    imageAlt: "Imagem do Secred Word",
+    imageAlt: "Imagem do Secret Word",
   },
   {
     id: 5,
@@ -59,7 +59,7 @@ const projectsData = [
     repositoryUrl: "https://github.com/Reladislau/RBank",
     siteUrl: "https://r-bank.vercel.app/",
     image: RBank,
-    imageAlt: "Imagem do Projeto Rbank",
+    imageAlt: "Imagem do Projeto RBank",
   },
   {
     id: 6,
@@ -102,7 +102,7 @@ function Projects() {
               <div className={Style.project_links}>
                 <a href={project.repositoryUrl} target="_blank" rel="noopener noreferrer">
                   <img src={WhiteGitHub} alt="GitHub" className={Style.link_icon} />
-                  <span>Link do Repositorio</span>
+                  <span>Link do Repositório</span>
                 </a>
                 <a href={project.siteUrl} target="_blank" rel="noopener noreferrer">
                   <img src={LinkIcon} alt="Link do site" className={Style.link_icon} />

@@ -4,8 +4,8 @@ import "./title.css"
 function Title() {
   return (
     <div className='title_container'>
-        <h1>SEJA BEM VINDO</h1>
-        <h3>ao meu portifólio</h3>
+        <h1>SEJA BEM-VINDO</h1>
+        <h3>ao meu portfólio</h3>
     </div>
   )
 }
