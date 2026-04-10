@@ -1,3 +1,5 @@
+import { useEffect } from 'react'
+import AOS from 'aos'
 import Navbar from './components/navbar/Navbar'
 import './App.css'
 import WelcomeText from './components/home_section/WelcomeText'
@@ -10,7 +12,15 @@ import Contact from './components/Contact/Contact'
 import Footer from './components/footer/Footer'
 
 function App() {
- 
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      offset: 100,
+      easing: 'ease-in-out',
+      once: false,
+      mirror: true
+    })
+  }, [])
 
   return (
     <>

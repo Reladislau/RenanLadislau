@@ -11,16 +11,16 @@ function AbouteMe() {
   }
 
   return (
-    <div className={Styles.about_me_container}>
-      <h3 className={Styles.about_me_heading}>SOBRE MIM</h3>
+    <div className={Styles.about_me_container} data-aos="fade-up">
+      <h3 className={Styles.about_me_heading} data-aos="fade-down">SOBRE MIM</h3>
       <div className={Styles.about_me_content}>
 
-        <div className={Styles.about_me_image_container}>
+        <div className={Styles.about_me_image_container} data-aos="fade-right">
             <img src={MeImage} alt="Renan" />
         </div>
 
-        <div className={Styles.about_me_text_container}>
-        <p className={Styles.about_me_paragraph}>
+        <div className={Styles.about_me_text_container} data-aos="fade-left">
+        <p className={Styles.about_me_paragraph} data-aos="fade-up" data-aos-delay="100">
           Sou estudante de Análise e Desenvolvimento de Sistemas e atuo no desenvolvimento de soluções orientadas a impacto e eficiência operacional. Tenho experiência com Java, Python, APIs REST e automação de processos, além de integração de sistemas e manipulação de dados para tomada de decisão. Já participei de projetos voltados à otimização de fluxos e redução de esforço manual, com foco em ganho de performance e escalabilidade. Busco evoluir como Analista de Sistemas, contribuindo com soluções robustas, bem estruturadas e alinhadas aos objetivos do negócio em ambientes dinâmicos.
         </p>
         <div className={Styles.about_me_buttons}>

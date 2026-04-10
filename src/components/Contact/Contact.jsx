@@ -31,8 +31,8 @@ function Contact() {
   }
 
   return (
-    <div className={Styles.contact_container}>
-      <div className={Styles.contact_header}>
+    <div className={Styles.contact_container} data-aos="fade-up">
+      <div className={Styles.contact_header} data-aos="fade-down">
         <h3>CONTATO</h3>
         <p>Vamos conversar sobre projetos, oportunidades e tecnologia.</p>
       </div>

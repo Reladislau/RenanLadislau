@@ -36,7 +36,8 @@ const otherSkills = [
     { label: "Scrum", Icon: SiScrumalliance, color: "#009FDA" },
 ]
 
-const skillSections = [
+function Habilities() {
+  const skillSections = [
     {
         title: "Front-End",
         subtitle: "Interfaces modernas e acessíveis",
@@ -67,11 +68,9 @@ const skillSections = [
         skills: otherSkills,
     },
 ]
-
-function Habilities() {
     return (
-        <section className={Style.habilities_container}>
-            <div className={Style.habilities_header}>
+        <section className={Style.habilities_container} data-aos="fade-up">
+            <div className={Style.habilities_header} data-aos="fade-down">
                 
                 <h3>HABILIDADES</h3>
                 <p>

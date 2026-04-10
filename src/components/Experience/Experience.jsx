@@ -2,8 +2,8 @@ import Style from './CSS/Experience.module.css'
 
 function Experience() {
     return (
-        <div className={Style.experience_container}>
-            <div className={Style.experience_header}>
+        <div className={Style.experience_container} data-aos="fade-up">
+            <div className={Style.experience_header} data-aos="fade-down">
                 <h3>EXPERIÊNCIA PROFISSIONAL</h3>
             </div>
             <div className={Style.experience_content}>

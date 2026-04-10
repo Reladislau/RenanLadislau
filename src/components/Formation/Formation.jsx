@@ -49,8 +49,8 @@ const trackCards = [...carouselCards, ...carouselCards]
 
 function Formation() {
   return (
-    <div className={Styles.formation_container}>
-      <h3 className={Styles.formation_heading}>FORMAÇÃO</h3>
+    <div className={Styles.formation_container} data-aos="fade-up">
+      <h3 className={Styles.formation_heading} data-aos="fade-down">FORMAÇÃO</h3>
       <div className={Styles.formation_content}>
         <div className={Styles.formation_carousel_stage}>
           <div className={Styles.formation_carousel_track}>

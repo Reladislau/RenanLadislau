@@ -79,8 +79,8 @@ function Projects() {
   const visibleProjects = showAllProjects ? projectsData : projectsData.slice(0, 4)
 
   return (
-    <div className={Style.projects_container}>
-      <div className={Style.projects_header}>
+    <div className={Style.projects_container} data-aos="fade-up">
+      <div className={Style.projects_header} data-aos="fade-down">
         <h3>PROJETOS</h3>
       </div>
       <div className={Style.projects_content}>
