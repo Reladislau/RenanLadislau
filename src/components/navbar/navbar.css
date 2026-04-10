@@ -101,12 +101,16 @@
 @media (max-width: 768px) {
     .navbar_container {
         height: auto;
-        min-height: 8vh;
-        padding: 0.6rem 1rem;
-        width: 95vw;
-        justify-content: space-between;
+        min-height: 0;
+        padding: 0;
+        width: fit-content;
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        justify-content: flex-end;
         align-items: center;
         flex-wrap: nowrap;
+        margin: 0 2.5vw 0 auto;
     }
 
     .navbar_container_scrolled {
@@ -116,24 +120,30 @@
     .navbar_hamburger {
         display: flex;
         flex-direction: column;
-        background: none;
-        border: none;
+        align-items: center;
+        justify-content: center;
+        width: 52px;
+        height: 52px;
+        background: transparent;
+        border: 1px solid #FFF;
+        border-radius: 50%;
         cursor: pointer;
-        padding: 0.5rem;
-        gap: 0.4rem;
+        padding: 0;
+        gap: 0.3rem;
         transition: all 0.3s ease;
     }
 
     .hamburger_line {
-        width: 22px;
-        height: 2.5px;
+        width: 26px;
+        height: 2.8px;
         background-color: #FFF;
         border-radius: 2px;
+        transform-origin: center;
         transition: all 0.3s ease;
     }
 
     .navbar_container.navbar_menu_open .hamburger_line:nth-child(1) {
-        transform: rotate(45deg) translate(8px, 8px);
+        transform: rotate(45deg) translate(5px, 5px);
     }
 
     .navbar_container.navbar_menu_open .hamburger_line:nth-child(2) {
@@ -141,30 +151,41 @@
     }
 
     .navbar_container.navbar_menu_open .hamburger_line:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -7px);
+        transform: rotate(-45deg) translate(5px, -5px);
     }
 
     .navbar_container .navbar_list {
-        display: none;
+        display: flex;
         flex-direction: column;
         position: absolute;
-        top: 100%;
-        left: 50%;
-        transform: translateX(-50%);
+        top: calc(100% + 0.55rem);
+        right: 0;
+        left: auto;
+        transform: none;
         background-color: #1F042B;
         border: 1px solid #FFF;
-        border-top: none;
-        border-radius: 0 0 15px 15px;
-        width: min(300px, 90vw);
+        border-radius: 15px;
+        width: min(320px, calc(100vw - 1rem));
+        max-height: 72vh;
+        overflow-y: auto;
         padding: 1rem 0;
         margin-top: 0;
         gap: 0.5rem;
         z-index: 999;
         box-sizing: border-box;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-8px) scale(0.98);
+        pointer-events: none;
+        transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s ease;
+        transform-origin: top right;
     }
 
     .navbar_container .navbar_list.navbar_list_open {
-        display: flex;
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        pointer-events: auto;
     }
 
     .navbar_container ul li {
@@ -181,17 +202,18 @@
     }
 
     .navbar_link_active {
-        background-color: rgba(255, 255, 255, 0.15);
+        background-color: #FFF;
+        color: #1C062F;
     }
 }
 
 /* ===== BREAKPOINT: 576px - Mobile ===== */
 @media (max-width: 576px) {
     .navbar_container {
-        width: 95vw;
-        padding: 0.5rem 0.8rem;
+        width: fit-content;
+        padding: 0;
         margin-top: 4vh;
-        min-height: 7vh;
+        min-height: 0;
     }
 
     .navbar_container_scrolled {
@@ -199,13 +221,18 @@
         margin-top: 4vh;
     }
 
+    .navbar_hamburger {
+        width: 46px;
+        height: 46px;
+    }
+
     .hamburger_line {
-        width: 20px;
-        height: 2.3px;
+        width: 23px;
+        height: 2.5px;
     }
 
     .navbar_list {
-        width: min(280px, 85vw);
+        width: min(300px, calc(100vw - 0.8rem));
         padding: 0.8rem 0;
     }
 
@@ -218,10 +245,10 @@
 /* ===== BREAKPOINT: 360px - Mobile Small ===== */
 @media (max-width: 360px) {
     .navbar_container {
-        width: 96vw;
-        padding: 0.4rem 0.6rem;
+        width: fit-content;
+        padding: 0;
         margin-top: 3vh;
-        min-height: 6vh;
+        min-height: 0;
     }
 
     .navbar_container_scrolled {
@@ -229,13 +256,18 @@
         margin-top: 3vh;
     }
 
+    .navbar_hamburger {
+        width: 42px;
+        height: 42px;
+    }
+
     .hamburger_line {
-        width: 18px;
-        height: 2px;
+        width: 21px;
+        height: 2.3px;
     }
 
     .navbar_list {
-        width: min(260px, 80vw);
+        width: min(280px, calc(100vw - 0.6rem));
         padding: 0.7rem 0;
     }
 

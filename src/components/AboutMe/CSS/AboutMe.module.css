@@ -168,14 +168,14 @@
 
     .about_me_image_container {
         width: 100%;
-        max-width: 460px;
+        max-width: 620px;
         display: flex;
         justify-content: center;
     }
 
     .about_me_image_container img {
         width: 100%;
-        max-width: 420px;
+        max-width: 580px;
         height: auto;
     }
 
@@ -189,14 +189,14 @@
     .about_me_buttons {
         flex-direction: column;
         gap: 16px;
-        width: 100%;
+        width: 90%;
     }
 
     .about_me_button_contact,
     .about_me_button_cv {
         width: 100%;
         height: 48px;
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 }
 
