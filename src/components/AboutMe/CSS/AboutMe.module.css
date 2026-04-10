@@ -200,48 +200,50 @@
     }
 }
 
-/* ===== BREAKPOINT: 576px (Mobile) ===== */
-@media (max-width: 576px) {
+/* ===== BREAKPOINT: 425px (Mobile Large) ===== */
+@media (max-width: 425px) {
     .about_me_container {
-        width: 95vw;
-        margin-top: 40px;
-        padding-bottom: 40px;
+        width: 94vw;
+        margin-top: 36px;
+        padding-bottom: 36px;
     }
 
     .about_me_container h3 {
-        font-size: 1.4rem;
+        font-size: 1.35rem;
     }
 
     .about_me_container p {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .about_me_content {
-        gap: 20px;
+        gap: 18px;
     }
 
     .about_me_image_container img {
-        max-height: 35vh;
+        max-height: 38vh;
     }
 
     .about_me_buttons {
-        gap: 1rem;
+        flex-direction: column;
+        gap: 0.9rem;
+        width: 100%;
     }
 
     .about_me_button_contact,
     .about_me_button_cv {
-        width: 50%;
-        height: 3rem;
-        font-size: 1rem;
+        width: 100%;
+        height: 2.9rem;
+        font-size: 0.98rem;
     }
 }
 
-/* ===== BREAKPOINT: 360px (Mobile Small) ===== */
-@media (max-width: 360px) {
+/* ===== BREAKPOINT: 375px (Mobile Medium) ===== */
+@media (max-width: 375px) {
     .about_me_container {
-        width: 95vw;
-        margin-top: 30px;
-        padding-bottom: 30px;
+        width: 94vw;
+        margin-top: 28px;
+        padding-bottom: 28px;
     }
 
     .about_me_container h3 {
@@ -249,26 +251,59 @@
     }
 
     .about_me_container p {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
     .about_me_content {
-        gap: 15px;
+        gap: 14px;
     }
 
     .about_me_image_container img {
-        max-height: 30vh;
+        max-height: 33vh;
     }
 
     .about_me_buttons {
-        flex-direction: column;
-        gap: 0.8rem;
+        gap: 0.75rem;
     }
 
     .about_me_button_contact,
     .about_me_button_cv {
-        width: 100%;
-        height: 2.8rem;
-        font-size: 0.95rem;
+        height: 2.75rem;
+        font-size: 0.92rem;
+    }
+}
+
+/* ===== BREAKPOINT: 320px (Mobile Small) ===== */
+@media (max-width: 320px) {
+    .about_me_container {
+        width: 94vw;
+        margin-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .about_me_container h3 {
+        font-size: 1.15rem;
+    }
+
+    .about_me_container p {
+        font-size: 0.9rem;
+    }
+
+    .about_me_content {
+        gap: 12px;
+    }
+
+    .about_me_image_container img {
+        max-height: 28vh;
+    }
+
+    .about_me_buttons {
+        gap: 0.65rem;
+    }
+
+    .about_me_button_contact,
+    .about_me_button_cv {
+        height: 2.6rem;
+        font-size: 0.88rem;
     }
 }

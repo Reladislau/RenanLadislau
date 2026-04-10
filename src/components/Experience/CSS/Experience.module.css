@@ -252,19 +252,22 @@
     }
 }
 
-/* ===== BREAKPOINT: 576px (Mobile) ===== */
-@media (max-width: 576px) {
+/* ===== BREAKPOINT: 425px (Mobile Large) ===== */
+@media (max-width: 425px) {
     .experience_container {
-        margin-top: 40px;
+        margin-top: 38px;
         padding: 0 10px;
     }
 
     .experience_header {
-        font-size: 1.4rem;
+        font-size: 1rem;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1.5rem;
     }
 
     .experience_content {
-        gap: 20px;
+        gap: 18px;
     }
 
     .experience_item {
@@ -273,7 +276,7 @@
     }
 
     .dateContainer {
-        font-size: 0.85rem;
+        font-size: 0.82rem;
         padding: 4px 8px;
         height: auto;
     }
@@ -284,37 +287,48 @@
     }
 
     .experience_title h4 {
-        font-size: 1.15rem;
+        font-size: 1.1rem;
         margin-left: 8px;
     }
 
     .experience_title p {
-        font-size: 0.95rem;
+        font-size: 0.92rem;
         margin-left: 8px;
     }
 
     .experience_description p {
-        font-size: 0.9rem;
+        font-size: 0.88rem;
         margin-left: 8px;
         width: 98%;
     }
 
+    .experience_habilities {
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 12px;
+        gap: 6px;
+    }
+
     .habilities_item {
-        font-size: 0.8rem;
-        padding: 0 8px;
-        height: 32px;
+        font-size: 0.78rem;
+        padding: 0 10px;
+        height: 30px;
     }
 }
 
-/* ===== BREAKPOINT: 360px (Mobile Small) ===== */
-@media (max-width: 360px) {
+/* ===== BREAKPOINT: 375px (Mobile Medium) ===== */
+@media (max-width: 375px) {
     .experience_container {
         margin-top: 30px;
         padding: 0 8px;
     }
 
     .experience_header {
-        font-size: 1.25rem;
+        font-size: 1rem;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1.25rem;
     }
 
     .experience_item {
@@ -323,29 +337,92 @@
     }
 
     .dateContainer {
-        font-size: 0.75rem;
+        font-size: 0.74rem;
         padding: 3px 6px;
     }
 
     .experience_title h4 {
-        font-size: 1rem;
+        font-size: 0.98rem;
         margin-left: 6px;
     }
 
     .experience_title p {
-        font-size: 0.9rem;
+        font-size: 0.86rem;
         margin-left: 6px;
     }
 
     .experience_description p {
-        font-size: 0.85rem;
+        font-size: 0.82rem;
         margin-left: 6px;
     }
 
+    .experience_habilities {
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        gap: 5px;
+    }
+
     .habilities_item {
-        font-size: 0.75rem;
-        padding: 0 6px;
+        font-size: 0.72rem;
+        padding: 0 8px;
         height: 28px;
+    }
+}
+
+/* ===== BREAKPOINT: 320px (Mobile Small) ===== */
+@media (max-width: 320px) {
+    .experience_container {
+        margin-top: 26px;
+        padding: 0 6px;
+    }
+
+    .experience_header {
+        font-size: 0.8rem;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .experience_item {
+        width: 95vw;
+        padding: 9px 0;
+    }
+
+    .dateContainer {
+        font-size: 0.68rem;
+        padding: 3px 5px;
+    }
+
+    .experience_title h4 {
+        font-size: 0.92rem;
+        margin-left: 5px;
+    }
+
+    .experience_title p {
+        font-size: 0.8rem;
+        margin-left: 5px;
+    }
+
+    .experience_description p {
+        font-size: 0.78rem;
+        margin-left: 5px;
+        width: 100%;
+    }
+
+    .experience_habilities {
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 8px;
+        gap: 4px;
+    }
+
+    .habilities_item {
+        font-size: 0.68rem;
+        padding: 0 6px;
+        height: 26px;
     }
 }
 
