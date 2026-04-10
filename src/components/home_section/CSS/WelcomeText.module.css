@@ -99,8 +99,9 @@
     }
 
     .welcome_text_container h1 {
-        font-size: 2.8rem;
-        line-height: 1.2;
+        font-size: clamp(1.95rem, 5.8vw, 2.8rem);
+        line-height: 1.15;
+        text-wrap: balance;
         margin-bottom: 16px;
     }
 
@@ -131,7 +132,9 @@
     }
 
     .welcome_text_container h1 {
-        font-size: 1.7rem;
+        font-size: clamp(1.28rem, 6.1vw, 1.7rem);
+        line-height: 1.15;
+        text-wrap: balance;
     }
 
     .welcome_text_container p {
@@ -157,10 +160,6 @@
         padding: 20px 14px;
     }
 
-    .welcome_text_container h1 {
-        font-size: 1.5rem;
-    }
-
     .welcome_text_container p {
         font-size: 0.95rem;
     }
@@ -181,10 +180,6 @@
         height: 48vh;
         margin-top: 2vh;
         padding: 18px 12px;
-    }
-
-    .welcome_text_container h1 {
-        font-size: 1.3rem;
     }
 
     .welcome_text_container p {
