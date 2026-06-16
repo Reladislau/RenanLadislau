@@ -21,7 +21,7 @@ function AbouteMe() {
 
         <div className={Styles.about_me_text_container} data-aos="fade-left">
         <p className={Styles.about_me_paragraph} data-aos="fade-up" data-aos-delay="100">
-          Sou estudante de Análise e Desenvolvimento de Sistemas e atuo no desenvolvimento de soluções orientadas a impacto e eficiência operacional. Tenho experiência com Java, Python, APIs REST e automação de processos, além de integração de sistemas e manipulação de dados para tomada de decisão. Já participei de projetos voltados à otimização de fluxos e redução de esforço manual, com foco em ganho de performance e escalabilidade. Busco evoluir como Analista de Sistemas, contribuindo com soluções robustas, bem estruturadas e alinhadas aos objetivos do negócio em ambientes dinâmicos.
+          Sou formado em Análise e Desenvolvimento de Sistemas e atuo no desenvolvimento de soluções orientadas a impacto e eficiência operacional. Tenho experiência com Java, Python, APIs REST e automação de processos, além de integração de sistemas e manipulação de dados para tomada de decisão. Já participei de projetos voltados à otimização de fluxos e redução de esforço manual, com foco em ganho de performance e escalabilidade. Busco evoluir como Analista de Sistemas, contribuindo com soluções robustas, bem estruturadas e alinhadas aos objetivos do negócio em ambientes dinâmicos.
         </p>
         <div className={Styles.about_me_buttons}>
             <button className={Styles.about_me_button_contact} type="button" onClick={handleContactClick}>Contato</button>
